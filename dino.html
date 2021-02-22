@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<head>
+
+    <script>
+        var a = null;
+        function element() {
+            a = document.querySelector(".op");
+        }
+        function to(e){   
+            var movement = e.which || e.keyCode;
+            switch (movement) {
+                case 38: jump();
+                    break;
+                    
+            }
+        }
+        
+        function jump() {
+            a.style.top = "-50px" ;
+         } setTimeout(display,1000);
+
+            function display(){
+                a.style.top="0px";
+            }
+
+               var b= null;
+        function elemen(){
+            var block=document.getElementById('blk');
+            block.style.screenleft=b;
+            b.style.left= "280px"
+        }setInterval(aj,1000);
+         function aj{
+           
+         }
+          
+
+           
+               
+       
+        }
+        onload=elemen;     
+                 
+        onload=element;
+
+   
+       
+    </script>
+
+<style>
+    .bd {
+        height: 300px;
+        width: 300px;
+        border: 1px solid black;
+        overflow: hidden;
+    }
+
+    .op {
+        width: 20px;
+        height: 30px;
+        border: 1px solid black;
+        background-color: brown;
+        margin-top: 268px;
+        position: relative;
+
+    }
+    .blk{
+        width: 20px;
+        height: 20px;
+        border: 1px solid black;
+        background-color: chocolate;
+        position:relative;
+      
+        margin-top: -22px;
+        animation: move 5s infinite;
+    }
+ 
+
+
+
+
+    
+</style>
+</head>
+
+<body onkeydown="to(event)">
+    <div class="bd">
+        <div class="op"> </div>
+       
+        <div class="blk"></div>
+    </div>
+
+
+</body>
